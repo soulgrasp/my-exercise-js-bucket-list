@@ -31,10 +31,13 @@ console.log(nestedItem);
 const nestedItem2 = mainSection.querySelector(".item");
 console.log(nestedItem2);
 
-// 
+// querySelectorAll  takes css selector returns nodelist
+const paragraphs = document.querySelectorAll(".para");
+console.log(paragraphs);
+const firstParag = paragraphs[1];
+console.log(firstParag);
 
-
-
+//
 // 
 
 
