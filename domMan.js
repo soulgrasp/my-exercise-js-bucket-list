@@ -56,12 +56,15 @@ const anotherArticle = document.querySelector(".another-article");
 
 // Style
 const paragraph = document.querySelector(".paragraph");
-console.log(paragraph);
+// console.log(paragraph);
 paragraph.style.color = "green";  // color
-console.log("color of p tag is: ", paragraph.style.color);
+// console.log("color of p tag is: ", paragraph.style.color);
+// console.log(paragraph.style); // shows all styling in styling object
 paragraph.style.fontSize = "2rem"; // font size  Camelcase convention from "style="color: red""
 
-
+//  createElement   
+const article2 = document.createElement("article");
+console.log(article2);
 
 
 
