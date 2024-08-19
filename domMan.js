@@ -3,11 +3,11 @@
 // get element by id
 const listDesc = document.getElementById('section-list');
 
-console.log(listDesc);
+//console.log(listDesc);
 
 // getElementByClassname
 const pTags = document.getElementsByClassName('content');
-console.log(pTags);
+// console.log(pTags);
 
 
 // getElementByName  // searches the name attribut (input elements)
@@ -17,27 +17,55 @@ console.log(pTags);
 // takes a string 
 // is applicable on HTML as well as the document object
 const item = document.querySelector('.item'); // CSS syntax selector, same as stylesheet
-console.log(item);
+// console.log(item);
 
 const mainSection = document.querySelector("#main-section");
-console.log(mainSection);
+// console.log(mainSection);
 
 // alternative 1  searching from document top
 const nestedItem = document.querySelector("#main-section .item"); // Id selector CSS style
 // gets the span element hits section on ID and the class selector "item" get the span element
-console.log(nestedItem);
+// console.log(nestedItem);
 
 // alternative way search from parent element
 const nestedItem2 = mainSection.querySelector(".item");
-console.log(nestedItem2);
+// console.log(nestedItem2);
 
 // querySelectorAll  takes css selector returns nodelist
 const paragraphs = document.querySelectorAll(".para");
-console.log(paragraphs);
+// console.log(paragraphs);
 const firstParag = paragraphs[1];
-console.log(firstParag);
+// console.log(firstParag);
 
-//
+// innerText  respect display: none
+const article = document.querySelector(".article");
+// console.log(article);
+// console.log(article.innerHTML); // print the text
+
+
+article.innerText = "This is the modded text of article";
+// console.log(article.innerText);
+
+
+// textContent prints it all
+const anotherArticle = document.querySelector(".another-article");
+// console.log(anotherArticle);
+// console.log(anotherArticle.innerText);
+// console.log(anotherArticle.textContent);
+
+
+// Style
+const paragraph = document.querySelector(".paragraph");
+console.log(paragraph);
+paragraph.style.color = "green";  // color
+console.log("color of p tag is: ", paragraph.style.color);
+paragraph.style.fontSize = "2rem"; // font size  Camelcase convention from "style="color: red""
+
+
+
+
+
+
 // 
 
 
