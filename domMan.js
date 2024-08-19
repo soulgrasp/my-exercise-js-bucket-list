@@ -63,11 +63,16 @@ paragraph.style.color = "green";  // color
 paragraph.style.fontSize = "2rem"; // font size  Camelcase convention from "style="color: red""
 
 //  createElement   
-const article2 = document.createElement("article");
+const article2 = document.createElement("article");  // exists now in memory not attached to DOM
+// article2.innerText = "this is an article";
 console.log(article2);
 
+// appendChild  add a node as the last child of an element
+document.body  // get element
 
-
+//const article3 = document.createElement("article");
+// attach to existing element
+document.body.appendChild(article2);
 
 // 
 
