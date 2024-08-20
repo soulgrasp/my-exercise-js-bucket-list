@@ -1,4 +1,4 @@
-
+/* 
 
 // get element by id
 const listDesc = document.getElementById('section-list');
@@ -70,9 +70,44 @@ console.log(article2);
 // appendChild  add a node as the last child of an element
 document.body  // get element
 
-//const article3 = document.createElement("article");
 // attach to existing element
-document.body.appendChild(article2);
+document.body.appendChild(article2); */
+
+// in most cases we don't want to use the body element
+// add article inside the section element
+
+/* const article3 = document.createElement("article");
+article3.innerText = "This is the modded text of article, Delete me";
+const section = document.querySelector(".section-new");
+section.appendChild(article3); */
+
+
+// classlist  property on every element, class="something" is contained within this, dom-token-list arraytype
+// read only but have access functions/methods to manipulate it.
+// use list-name class
+
+/* article3.classList.add("green-bg", "show"); // add classes
+console.log(article3);
+console.log(article3.classList); // output classes
+article3.classList.remove("show"); // remove
+console.log(article3.classList); // output classes */
+
+// insertAdjacentElement  Add element on a spec position with more precistion
+// afterbegin   first child
+// afterend     after the element
+// beforebegin  before the element
+// beforeend    last child
+
+
+/* const div = document.createElement("div");
+div.innerText= "this is a div innerText";
+div.classList.add("div-content");
+
+
+const sectionL1 = document.querySelector(".list");
+console.log(sectionL1);
+sectionL1.insertAdjacentElement("beforeend", div); */
+
 
 // 
 
